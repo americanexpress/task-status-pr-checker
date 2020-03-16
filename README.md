@@ -4,7 +4,7 @@ This repository contains all actions that are used within American Express Githu
 
 ## Task Status Pull Request Checker
 
-This enables a pull request to be in a pending state if the pull request has pending tasks.
+This is triggered when a pull request is created. If the pull request has pending tasks. The pull request won't be merged and the status is updated on the pull request checks.
 
 ## How to enable this actions
 
