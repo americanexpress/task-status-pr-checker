@@ -1,0 +1,8 @@
+name: 'Task Status Pull Request Checker'
+description: 'Check for tasks in pull request and prevents merge unless the task is checked.'
+outputs:
+  status: # 
+    description: 'Status of the task'
+runs:
+  using: 'node12'
+  main: 'index.js'
