@@ -1,6 +1,6 @@
 # Github Actions
 
-This repository contains all actions that are used within American Express Github repositories.
+This repository contains actions used within American Express Github repositories.
 
 ## Task Status Pull Request Checker
 
