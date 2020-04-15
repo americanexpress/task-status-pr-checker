@@ -1,14 +1,14 @@
 # Github Actions
 
-This repository contains all actions that are used within American Express Github repositories.
+This repository contains actions used within American Express Github repositories.
 
 ## Task Status Pull Request Checker
 
 This is triggered when a pull request is created. If the pull request has pending tasks. The pull request won't be merged and the status is updated on the pull request checks.
 
-## How to enable this actions
+### How to enable this action
 
-1. Create a[github workflow](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) in your repository and add the below.
+1. Create a [github workflow](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) in your repository and add the below.
 
 ```yaml
 on:
