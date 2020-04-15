@@ -8,7 +8,7 @@ This is triggered when a pull request is created. If the pull request has pendin
 
 ### How to enable this action
 
-1. Create a[github workflow](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) in your repository and add the below.
+1. Create a [github workflow](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) in your repository and add the below.
 
 ```yaml
 on:
