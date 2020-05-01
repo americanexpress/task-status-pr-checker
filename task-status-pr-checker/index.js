@@ -43,7 +43,7 @@ async function run() {
       ...context.repo,
       sha,
       state,
-      description: state === 'pending' ? 'Tasks are pending' : 'All tasks are done',
+      description: state === 'pending' ? 'Tasks are pending' : 'All tasks have been completed',
       context: 'tasks',
     });
     core.setOutput('state', state);
