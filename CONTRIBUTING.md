@@ -29,7 +29,7 @@ This project adheres to the American Express [Code of Conduct](./CODE_OF_CONDUCT
 
    > replace `your-github-username` with your github username
 
-3. Navigate to the action you'd like to update and follow refer to [building actions](https://help.github.com/en/actions/building-actions) to get started with contributing to the action.
+3. Navigate to the action you'd like to update and  refer to [building actions](https://help.github.com/en/actions/building-actions) to get started with contributing to the action.
 
 
 ## Submitting a new feature
