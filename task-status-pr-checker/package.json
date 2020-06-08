@@ -1,0 +1,55 @@
+{
+  "name": "task-status-pr-checker",
+  "version": "1.0.0",
+  "description": "This github action to checks for open tasks within a pull request",
+  "main": "index.js",
+  "scripts": {
+    "test":"npm run test:lint && npm run test:lockfile",
+    "test:lint": "eslint index.js",
+    "test:lockfile": "lockfile-lint -p package-lock.json -t npm -a npm -o https: -c -i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/americanexpress/actions.git"
+  },
+  "keywords": [
+    "actions",
+    "pull request",
+    "tasks"
+  ],
+ "contributors": [
+    "Andres Escobar <Andres.Escobar@aexp.com> (https://github.com/anescobar1991)",
+    "James Singleton <James.Singleton1@aexp.com> (https://github.com/JamesSingleton)",
+    "Jimmy King  <Jimmy.King@aexp.com> (https://github.com/10xLaCroixDrinker)",
+    "Jonathan Adshead <Jonathan.Adshead@aexp.com> (https://github.com/JAdshead)",
+    "Michael Tobia <Michael.M.Tobia@aexp.com> (https://github.com/Francois-Esquire)",
+    "Michael Tomcal <Michael.A.Tomcal@aexp.com> (https://github.com/mtomcal)",
+    "Stephanie Coates  <Stephanie.Coates1@aexp.com> (https://github.com/stephaniecoates)",
+    "Nelly Kiboi <Nelly.J.Kiboi@aexp.com> (https://github.com/nellyk)",
+    "Nickolas Oliver <nickolas.oliver@aexp.com> (https://github.com/PixnBits)",
+    "Ruben Casas <ruben.casas@aexp.com> (https://github.com/infoxicator)"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": " https://github.com/americanexpress/actions/issues"
+  },
+  "homepage": "https://github.com/americanexpress/actions#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "eslint": "^6.8.0",
+    "eslint-config-amex": "^11.2.0",
+    "husky": "^4.2.3",
+    "lockfile-lint": "^4.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
