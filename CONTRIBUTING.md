@@ -19,12 +19,12 @@ This project adheres to the American Express [Code of Conduct](./CODE_OF_CONDUCT
 
 ### Installation
 
-1. Fork the repository `actions` to your GitHub account.
+1. Fork the repository `task-status-pr-checker` to your GitHub account.
 2. Afterwards run the following commands in your terminal
 
     ```bash
-    $ git clone https://github.com/<your-github-username>/actions
-    $ cd actions
+    $ git clone https://github.com/<your-github-username>/task-status-pr-checker
+    $ cd task-status-pr-checker
     ```
 
    > replace `your-github-username` with your github username
