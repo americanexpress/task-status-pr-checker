@@ -1,6 +1,6 @@
-# Github Actions
+# Task Status Pull Request Checker
 
-> This repository contains actions used within American Express Github repositories.
+> This is triggered when a pull request is created. If the pull request has pending tasks. The pull request won't be merged and the status is updated on the pull request checks.
 
 ## 👩‍💻 Hiring 👨‍💻
 
@@ -13,12 +13,6 @@
 * [License](#%EF%B8%8F-license)
 * [Code Of Conduct](#%EF%B8%8F-code-of-conduct)
 * [Contributing](#-contributing)
-
-## 👩‍🏭 Actions
-
-## Task Status Pull Request Checker
-
-This is triggered when a pull request is created. If the pull request has pending tasks. The pull request won't be merged and the status is updated on the pull request checks.
 
 ### How to enable this action
 
@@ -51,13 +45,9 @@ jobs:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
  ```
 
-2. Pending tasks
+1. Tasks
 
-![Pending task](./task-status-pr-checker/images/pending-task.png)
-
-3. Completed tasks
-
-![Completed tasks](./task-status-pr-checker/images/complete-task.png)
+![Building passing after task is marked complete](./tasks-checker.gif)
 
 
 ## 🗝️ License
