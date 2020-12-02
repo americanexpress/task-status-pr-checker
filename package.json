@@ -2,22 +2,22 @@
   "name": "task-status-pr-checker",
   "version": "1.0.0",
   "description": "This github action to checks for open tasks within a pull request",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test":"npm run test:lint && npm run test:lockfile",
+    "test": "npm run test:lint && npm run test:lockfile",
     "test:lint": "eslint index.js",
     "test:lockfile": "lockfile-lint -p package-lock.json -t npm -a npm -o https: -c -i"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/americanexpress/actions.git"
+    "url": "https://github.com/americanexpress/task-status-pr-checker.git"
   },
   "keywords": [
     "actions",
     "pull request",
     "tasks"
   ],
- "contributors": [
+  "contributors": [
     "Andres Escobar <Andres.Escobar@aexp.com> (https://github.com/anescobar1991)",
     "James Singleton <James.Singleton1@aexp.com> (https://github.com/JamesSingleton)",
     "Jimmy King  <Jimmy.King@aexp.com> (https://github.com/10xLaCroixDrinker)",
@@ -31,9 +31,9 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": " https://github.com/americanexpress/actions/issues"
+    "url": " https://github.com/americanexpress/task-status-pr-checker/issues"
   },
-  "homepage": "https://github.com/americanexpress/actions#readme",
+  "homepage": "https://github.com/americanexpress/task-status-pr-checker#readme",
   "dependencies": {
     "@actions/core": "^1.2.3",
     "@actions/github": "^2.1.1"

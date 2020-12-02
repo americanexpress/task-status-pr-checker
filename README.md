@@ -40,7 +40,7 @@ jobs:
     name: Check for tasks in pull requests
     steps:
       - name: Pull request task checker
-        uses: americanexpress/actions/task-status-pr-checker@v1
+        uses: americanexpress/task-status-pr-checker@v1
         with:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
  ```
