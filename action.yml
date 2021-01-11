@@ -4,5 +4,5 @@ outputs:
   status: # 
     description: 'Status of the task'
 runs:
-  using: 'node14'
+  using: 'node12'
   main: 'index.js'
